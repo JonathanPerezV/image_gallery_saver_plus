@@ -25,7 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    if (project.hasProperty("android.namespace")) {
+    if (project.android.hasProperty("namespace")) {
         namespace "com.example.imagegallerysaver"
     } else {
         println("El atributo 'namespace' no es necesario para esta versión de AGP")
