@@ -33,6 +33,14 @@ android {
     
     compileSdkVersion 30
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8  // O 1.8, depende de lo que uses
+        targetCompatibility JavaVersion.VERSION_1_8  // O 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"  // O 1.8, dependiendo de lo que uses
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
